@@ -1,0 +1,27 @@
+<%= form_with(model: material_cirurgico) do |form| %>
+  <% if material_cirurgico.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(material_cirurgico.errors.count, "error") %> prohibited this material_cirurgico from being saved:</h2>
+
+      <ul>
+        <% material_cirurgico.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :tipo, style: "display: block" %>
+    <%= form.text_field :tipo %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

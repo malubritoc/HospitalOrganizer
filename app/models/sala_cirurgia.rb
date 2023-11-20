@@ -1,0 +1,2 @@
+class SalaCirurgia < ApplicationRecord
+end

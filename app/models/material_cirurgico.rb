@@ -1,0 +1,2 @@
+class MaterialCirurgico < ApplicationRecord
+end

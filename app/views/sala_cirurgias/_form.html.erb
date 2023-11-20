@@ -1,0 +1,27 @@
+<%= form_with(model: sala_cirurgia) do |form| %>
+  <% if sala_cirurgia.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(sala_cirurgia.errors.count, "error") %> prohibited this sala_cirurgia from being saved:</h2>
+
+      <ul>
+        <% sala_cirurgia.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :especialidade, style: "display: block" %>
+    <%= form.text_field :especialidade %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

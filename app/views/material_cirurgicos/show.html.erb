@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @material_cirurgico %>
+
+<div>
+  <%= link_to "Edit this material cirurgico", edit_material_cirurgico_path(@material_cirurgico) %> |
+  <%= link_to "Back to material cirurgicos", material_cirurgicos_path %>
+
+  <%= button_to "Destroy this material cirurgico", @material_cirurgico, method: :delete %>
+</div>

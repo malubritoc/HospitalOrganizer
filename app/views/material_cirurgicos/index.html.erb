@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Material cirurgicos</h1>
+
+<div id="material_cirurgicos">
+  <% @material_cirurgicos.each do |material_cirurgico| %>
+    <%= render material_cirurgico %>
+    <p>
+      <%= link_to "Show this material cirurgico", material_cirurgico %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New material cirurgico", new_material_cirurgico_path %>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Sala cirurgias</h1>
+
+<div id="sala_cirurgias">
+  <% @sala_cirurgias.each do |sala_cirurgia| %>
+    <%= render sala_cirurgia %>
+    <p>
+      <%= link_to "Show this sala cirurgia", sala_cirurgia %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New sala cirurgia", new_sala_cirurgia_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data: 2023-11-20
+  hora_inicio: 2023-11-20 20:24:24
+  hora_fim: 2023-11-20 20:24:24
+  sala_cirurgia: one
+  medico: one
+  paciente: one
+  urgencia: false
+
+two:
+  data: 2023-11-20
+  hora_inicio: 2023-11-20 20:24:24
+  hora_fim: 2023-11-20 20:24:24
+  sala_cirurgia: two
+  medico: two
+  paciente: two
+  urgencia: false
